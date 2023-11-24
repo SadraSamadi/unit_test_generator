@@ -55,7 +55,7 @@ def generate(inp_txt):
         if char == stop_char:
             break
         out_txt += char
-        dec_inp = text_to_seq(char)
+        dec_inp = [char_to_index[char]]
         dec_inp = np.array([dec_inp])
         pred_state = [decoder_h, decoder_c]
     return out_txt
