@@ -26,8 +26,8 @@ max_out_len = max([len(out) for out in output_texts])
 train_size = int(len(input_texts) * 0.9)
 train_inputs = input_texts[:train_size]
 train_outputs = output_texts[:train_size]
-test_inputs = input_texts[train_size:-1]
-test_outputs = output_texts[train_size:-1]
+test_inputs = input_texts[train_size:]
+test_outputs = output_texts[train_size:]
 
 embedding_size = 128
 lstm_size = 256
