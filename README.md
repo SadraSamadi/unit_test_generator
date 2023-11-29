@@ -43,13 +43,16 @@ Generating unit test by sequence-to-sequence model.
 
 - Recommended Python version: `Python 3.11.5`
 - Create Python environment:
-  - conda (Option 1):
+  - Option 1 (conda):
     - `conda env create -f environment.yml`
     - `conda activate unit_test_generator`
-  - pip (Option 2):
+  - Option 2 (pip):
     - `python -m venv .venv`
     - `source ./.venv/bin/activate`
-    - `python -m pip install -r requirements.txt`
+    - Install dependencies:
+        - Option 1: `python -m pip install -r requirements.txt`
+        - Option 2: `python -m pip install tensorflow==2.14.0`
+- The first run might take long!
 - To run prediction: `python pred.py`
 - To generate dataset: `python data.py`
 - To run training: `python train.py`
